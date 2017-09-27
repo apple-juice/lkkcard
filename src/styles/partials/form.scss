@@ -1,0 +1,69 @@
+// shared
+
+.btn {border: 0; color: #fff; font-weight: 600; font-family: $font-default; background: getColor(primary); position: relative; overflow: hidden; display: inline-block; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; border-radius: 100px; -webkit-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, -webkit-transform 0.3s ease; -moz-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, -moz-transform 0.3s ease; -o-transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, -o-transform 0.3s ease; transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow: none !important; font-size: 18px; font-size: 1.125rem; padding: 13px 28px 12px; padding: 0.8125rem 1.75rem 0.75rem;  }
+
+.btn:hover {color: #fff; background: darken(getColor(primary), 3%);}
+
+.btn:focus {color: #fff;}
+
+.btn .icon {margin-right: 0; font-size: 20px; font-size: 1.25rem; }
+
+.btn--flat { background: transparent !important; color: getColor(primary) !important; }
+
+.form-control {font-family: $font-default; display: block; width: 100%; height: 50px; padding: 10px 20px; font-size: 18px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 4px; box-shadow: none; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, background-color ease-in-out .15s; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+
+.form-control ::-webkit-input-placeholder { color: rgba(#3F4D60, 0.6); }
+
+.form-control :-moz-placeholder { color: rgba(#3F4D60, 0.6); }
+
+.form-control ::-moz-placeholder { color: rgba(#3F4D60, 0.6); }
+
+.form-control :-ms-input-placeholder { color: rgba(#3F4D60, 0.6); }
+
+.form-control.error { border-color: #ff3e2e; }
+
+.form-control.error:focus { border-color: #ff3e2e; }
+
+.form-control:focus { border-color: #e1e1e1; box-shadow: none;  }
+
+.form-control[disabled]:not(.select__elem), .form-control.disabled, .form-control.form-control--disabled { background: #F5F6F7; border-color: #cfd2d7; color: rgba(63, 77, 96, 0.6); }
+
+
+.form_request {
+  width: 370px;
+  margin: 0 auto;
+  max-width: 100%;
+
+  .form-control {
+    text-align: center;
+  }
+
+  @include break-max(medium) {
+    .form-control {
+      height: 40px;
+      font-size: 16px;
+    }
+
+    .btn {
+      height: 40px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.hint {
+  text-align: left;
+  font-size: getFontSize(small);
+  color: rgba(getColor(secondary), .8);
+  margin: 5px 0;
+
+  &--error {
+    color: #ff3e2e !important;
+  }
+}

@@ -1,0 +1,34 @@
+@mixin break-min ($size: medium) {
+  @media (min-width: map-get($screens, $size)) {
+    @content;
+  }
+}
+
+@mixin break-max ($size: medium) {
+  @media (max-width: map-get($screens, $size)) {
+    @content;
+  }
+}
+
+@mixin break-min-height ($size: medium) {
+  @media (min-height: map-get($screens, $size)) {
+    @content;
+  }
+}
+
+@mixin break-max-height ($size: medium) {
+  @media (max-height: map-get($screens, $size)) {
+    @content;
+  }
+}
+
+@mixin fontantialias ($on) {
+  @if $on == true {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}

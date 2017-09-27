@@ -1,0 +1,15 @@
+.vertical_align {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+
+  &__row {
+    display: table-row;
+  }
+
+  &__cell {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

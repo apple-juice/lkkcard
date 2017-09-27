@@ -1,0 +1,17 @@
+@import 'vars';
+
+@function getColor($name) {
+  @return map-get($colors, $name);
+}
+
+@function getFontSize($name) {
+  @return map-get($font-sizes, $name);
+}
+
+@function getFontWeight($name) {
+  @return map-get($font-weights, $name);
+}
+
+@function getZIndex($name) {
+  @return map-get($layers, $name);
+}

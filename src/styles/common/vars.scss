@@ -1,0 +1,60 @@
+$colors: (
+  white: #fff,
+  dark: #111,
+  black: #000,
+  text: #333,
+  dark-grey: #3C3C3C,
+  grey: #ECECEC,
+  dusty-grey: #999,
+  secondary: #3f4d60,
+  primary: #0388EF,
+);
+
+$screens: (
+  xlarge: 1280px,
+  large: 1024px,
+  tablet: 991px,
+  medium: 767px,
+  mobile-alt: 640px,
+  mobile: 370px
+);
+
+$font-sizes: (
+  h1: 80px,
+  h2: 60px,
+  h3: 26px,
+  h4: 21px,
+  h5: 16px,
+  large: 40px,
+  big: 22px,
+  regular: 18px,
+  subtitle: 30px,
+  small: 16px,
+  xsmall: 14px,
+  smaller: 12px
+);
+
+$font-weights: (
+  thin: 200,
+  light: 300,
+  regular: 400,
+  semibold: 600,
+  bold: 700
+);
+
+$layers: (
+  normal: 1,
+  layer-2: 2,
+  layer-3: 3,
+  layer-4: 4,
+  layer-5: 5,
+  fixed: 100,
+  modal: 1000
+);
+
+$transition: .3s ease;
+
+$border-radius: 4px;
+
+$font-stack: 'Akrobat', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+$font-default: 'Proxima Nova', serif;

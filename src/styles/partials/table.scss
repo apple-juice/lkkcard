@@ -1,0 +1,119 @@
+.table {
+  width: 100%;
+  font-size: getFontSize(big);
+  color: getColor(text);
+  letter-spacing: 0;
+  line-height: 1.5;
+  text-align: left;
+  border-collapse: separate;
+  margin-bottom: 60px;
+
+  tr {
+    th, td {
+      line-height: 1.6;
+      padding: 22px 20px;
+      border-bottom: 1px solid rgba(getColor(secondary), .04);
+      transition: background-color $transition;
+    }
+
+    th {
+      font-family: $font-stack;
+      font-size: getFontSize(h3);
+      font-weight: getFontWeight(bold);
+      color: getColor(dark);
+      letter-spacing: 0;
+      line-height: 1.5;
+    }
+
+    &:hover td {
+      background-color: rgba(getColor(white), .6);
+    }
+  }
+
+  @include break-max(tablet) {
+    font-size: 14px;
+    line-height: normal;
+
+    tr th {
+      font-size: 16px;
+    }
+
+    tr:hover td {
+      background-color: transparent;
+    }
+  }
+}
+
+.table_fees {
+  ._fees {
+    width: 400px;
+  }
+
+  ._cur {
+    text-align: center;
+  }
+
+  ._title {
+    display: none;
+  }
+
+  @include break-max(mobile-alt) {
+    display: block;
+    
+    tbody, tr, td {
+      display: block;
+      text-align: left;
+    }
+
+    tbody {
+      margin-bottom: 15px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(getColor(secondary), .04);
+
+      &._first {
+        border-top: 0;
+      }
+    }
+
+    tr {
+      th, td {
+        padding: 4px 10px;
+      }
+
+      td {
+        border: 0;
+
+        @util clearfix;
+      }
+    }
+
+    .hidden-small {
+      display: none;
+    }
+
+    ._fees {
+      font-family: $font-stack;
+      font-size: 16px;
+      font-weight: getFontWeight(bold);
+      color: getColor(dark);
+      white-space: normal;
+      width: 100%;
+    }
+
+    ._title {
+      color: rgba(63, 77, 96, 0.8);
+      float: left;
+      width: 50%;
+      display: block;
+    }
+
+    ._value {
+      float: left;
+      width: 50%;
+    }
+
+    ._cur {
+      text-align: left;
+    }
+  }
+}

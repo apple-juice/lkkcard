@@ -1,0 +1,104 @@
+.list {
+  list-style: none;
+}
+
+.list_row {
+}
+
+.list_item {
+  margin-bottom: 60px;
+
+  &__title {
+    font-family: $font-stack;
+    font-weight: getFontWeight(bold);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: getColor(text);
+    line-height: 1.64;
+  }
+
+  @include break-max(tablet) {
+    margin-bottom: 45px;
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      line-height: normal;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: normal;
+    }
+  }
+
+  @include break-max(mobile-alt) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.list_quotes {
+  font-size: 0;
+
+  &__col + &__col {
+    margin-top: 80px;
+
+    .quote__author .user {
+      float: left;
+    }
+  }
+
+  @include break-max(mobile-alt) {
+    &__col + &__col {
+      margin-top: 0;
+    }
+
+    &__col {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+.list_features {
+
+}
+
+.asset {
+  @util clearfix;
+
+  &__icon {
+    float: left;
+    margin-right: 28px;
+    margin-top: 2px;
+  }
+
+  &__content {
+    overflow: hidden;
+  }
+
+  &__title {
+    color: getColor(text);
+  }
+
+  &__desc {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  @include break-max(medium) {
+    font-size: 15px;
+
+    &__icon {
+      margin-right: 15px;
+    }
+
+    &__desc {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}

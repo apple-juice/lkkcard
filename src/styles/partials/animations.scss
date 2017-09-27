@@ -1,0 +1,51 @@
+.floating {
+  transform: translate(0px);
+  animation: float 9s ease-in-out infinite;
+}
+
+.floating_card {
+  transform: translate(0px);
+  animation: float_card 9s ease-in-out infinite;
+  animation-delay: .4s;
+}
+
+.floating_phone {
+  transform: translate(0px);
+  animation: float_phone 10s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float_card {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px) translatex(-10px) ;
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+@keyframes float_phone {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

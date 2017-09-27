@@ -1,0 +1,41 @@
+@import './reset.css';
+@import 'vendor/bootstrap-custom.min.css';
+@import 'vendor/jquery.fancybox.css';
+@import 'common/fonts';
+@import 'common/icons';
+@import 'common/vars';
+@import 'common/functions';
+@import 'common/mixins';
+@import 'common/typo';
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font: 400 getFontSize(regular) $font-default;
+  color: getColor(dark);
+  background-color: getColor(white);
+
+  -webkit-text-size-adjust: none;
+  font-size-adjust: none;
+
+  @include fontantialias(true);
+}
+
+@import 'partials/header';
+@import 'partials/footer_shared';
+@import 'partials/grid';
+@import 'partials/sections';
+@import 'partials/list';
+@import 'partials/form';
+@import 'partials/homepage';
+@import 'partials/quotes';
+@import 'partials/table';
+@import 'partials/animations';

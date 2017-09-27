@@ -1,0 +1,128 @@
+.quote {
+  font-size: 22px;
+
+  + .quote {
+    margin-top: 90px;
+  }
+
+  &__bubble {
+    background: getColor(white);
+    box-shadow: 0 2px 6px 0 rgba(63,77,96,0.10);
+    border-radius: 8px;
+    padding: 22px 50px 22px 30px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 24px;
+      height: 19px;
+      background: url(../../public/images/quote.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  &__title {
+    font-family: $font-stack;
+    color: getColor(dark);
+    font-weight: getFontWeight(bold);
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 35px;
+    margin-bottom: 5px;
+    color: getColor(text);
+  }
+
+  &__author {
+    margin-top: 25px;
+
+    @util clearfix;
+
+    .user {
+      float: right;
+    }
+  }
+
+  @include break-max(tablet) {
+    margin-bottom: 45px;
+
+    + .quote {
+      margin-top: 0;
+    }
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      line-height: normal;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: normal;
+    }
+
+    &__author {
+      margin-top: 15px;
+
+      .user {
+        float: none !important;
+      }
+    }
+  }
+}
+
+.user {
+  @util clearfix;
+  
+  &__img {
+    float: left;
+    margin-right: 15px;
+  }
+  
+  &__content {
+    overflow: hidden;
+  }
+
+  &__title {
+    font-weight: getFontWeight(semibold);
+    font-size: getFontSize(regular);
+    color: getColor(dark);
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: rgba(getColor(secondary), .8);
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+
+  @include break-max(tablet) {
+    &__img {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: normal;
+    }
+
+    &__description {
+      font-size: 14px;
+      line-height: normal;
+    }
+  }
+}
