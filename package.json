@@ -1,9 +1,9 @@
 {
-  "name": "ico-dutch-auction",
+  "name": "card-promo",
   "version": "0.1.0",
   "private": true,
   "main": "n/a",
-  "description": "LKK Dutch Auction",
+  "description": "Lykke Card",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rimraf dist/",
@@ -19,14 +19,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/LykkeCity/IcoDutchAuction.git"
+    "url": "git+ssh://git@github.com/LykkeCity/LykkeCardMarkup.git"
   },
   "keywords": [
     "LKK"
   ],
   "author": "Yuliya Mochalova <daycoder@icloud.com> (https://github.com/apple-juice)",
   "bugs": {
-    "url": "https://github.com/LykkeCity/IcoDutchAuction/issues"
+    "url": "https://github.com/LykkeCity/LykkeCardMarkup/issues"
   },
   "dependencies": {
     "lodash.foreachright": "^4.4.0",
