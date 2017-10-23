@@ -21,6 +21,7 @@
 
 .section_subtitle {
   font-family: $font-stack;
+  font-weight: getFontWeight(regular);
 }
 
 .section_header {
