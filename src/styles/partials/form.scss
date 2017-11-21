@@ -67,3 +67,47 @@
     color: #ff3e2e !important;
   }
 }
+
+.form_share_invite {
+  margin-top: 30px;
+
+  .control-label {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.88;
+    color: rgba(getColor(white), .6);
+  }
+}
+
+.btn--icon {
+  background-color: transparent !important;
+  border-radius: 0;
+  padding: 12px 14px;
+}
+
+.input-group {
+  position: relative;
+
+  .form-control {
+    padding-right: 50px;
+  }
+}
+
+.input-group-addon {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  &.left {
+    right: auto;
+    left: 0;
+    color: #b2b8bf;
+    opacity: 1 !important;
+    cursor: default;
+
+    + .form-control {
+      font-size: 16px;
+      padding-left: 40px;
+    }
+  }
+}

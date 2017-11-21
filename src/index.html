@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Lykke Card – Unlock Your Wallet</title>
+    <meta name="description" content="The new Lykke Card: the quickest way to access your new assets">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  </head>
+  <body>
+
+    <%= require('html-loader?attrs=false!./partials/header.html') %>
+
+      <%= require('html-loader?attrs=false!./partials/sections/lead-authorized.html') %>
+      <%= require('html-loader?attrs=false!./partials/sections/about.html') %>
+      <%= require('html-loader?attrs=false!./partials/sections/features.html') %>
+      <%= require('html-loader?attrs=false!./partials/sections/fees.html') %>
+      <%= require('html-loader?attrs=false!./partials/sections/request.html') %>
+
+    <%= require('html-loader?attrs=false!./partials/footer.html') %>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
+    <script src="clipboard.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+
+    <!-- Modal -->
+    <div class="modal modal--message fade" id="send" tabindex="-1" role="dialog">
+
+      <div class="modal_valign">
+        <div class="modal_valign__row">
+          <div class="modal_valign__cell">
+
+            <div class="modal__dialog" role="document">
+              <div class="modal__content">
+                <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <div class="modal__body">
+                  <h3>Invite people to Lykke</h3>
+                  <div class="text">
+                    <p>Please enter e-mail of your friend:</p>
+
+                    <form action="">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <label for="email" class="btn btn--icon input-group-addon left">
+                            <i class="icon icon--email"></i>
+                          </label>
+                          <input type="email" id="email" class="form-control">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal__footer">
+                  <button type="button" class="btn btn--primary pull-right" data-dismiss="modal">Send invite</button>
+                  <button type="button" class="btn btn--flat" data-dismiss="modal">Cancel and close</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      new Clipboard('.btn_copy');
+    </script>
+  </body>
+</html>
+
+
+
+<script type="text/javascript">
+  a2a_config.linkurl = window.location.host + document.getElementById('code').value;
+  a2a.init('page');
+</script>

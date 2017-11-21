@@ -66,12 +66,17 @@ const commonConfig = {
       }
     }),
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, './src/template.html'),
+      template: path.resolve(__dirname, './src/index.html'),
       hash: false,
       filename: 'index.html',
       minify: {
         collapseWhitespace: true
       }
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/countries.html'),
+      hash: false,
+      filename: 'countries.html'
     })
   ]
 }
@@ -126,7 +131,7 @@ const buildConfig = {
   plugins: [
     new ExtractTextPlugin({
       filename: '[name].css',
-      allChunks: true
+      allChunks: true,
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
@@ -155,7 +160,7 @@ const buildConfig = {
         test: /\.scss$/,
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: 'css-loader!postcss-loader!sass-loader'
+          use: 'css-loader!postcss-loader!sass-loader',
         }),
         include: stylePaths
       }

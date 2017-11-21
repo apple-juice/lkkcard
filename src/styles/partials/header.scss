@@ -22,7 +22,8 @@
     @util clearfix;
   }
 
-  &--inverse {
+  &--inverse,
+  .page_inner & {
     background-color: getColor(white);
     background-image: none;
 
@@ -72,6 +73,20 @@
       .btn {
         background-color: getColor(dark);
         color: getColor(white);
+      }
+    }
+  }
+
+  .page_inner & {
+    .header_nav {
+      &__item {
+        a {
+          color: getColor(black);
+
+          &:hover {
+            color: rgba(getColor(black), .6)
+          }
+        }
       }
     }
   }
@@ -182,5 +197,21 @@
         padding: 8px 10px;
       }
     }
+  }
+}
+
+
+.header_right {
+  .header_nav__item a {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 140px;
+  }
+
+  .icon {
+    font-size: 18px;
+    margin-top: -2px;
+    margin-right: 0;
   }
 }
