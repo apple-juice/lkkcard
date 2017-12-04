@@ -82,6 +82,11 @@ const commonConfig = {
       template: path.resolve(__dirname, './src/my_cards.html'),
       hash: false,
       filename: 'my_cards.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/messages.html'),
+      hash: false,
+      filename: 'messages.html'
     })
   ]
 }

@@ -60,98 +60,163 @@
 
   <section class="section section_lead section_lead--cards" id="lead">
     <div class="container">
-      <div class="col-md-6 automargin">
-        <h2>My LykkeCards</h2>
+      <div class="row">
+        <div class="col-md-6 automargin">
+          <h2>My LykkeCards</h2>
 
-        <div class="card_list slick-slider">
-          <div class="card_item">
-            <div class="card_preview">
-              <div class="card_preview__front">
-                <img src="images/card.png" alt="card" width="500" class="card_preview__image">
-                <div class="card_preview__label"></div>
-                <div class="card_preview__info">
-                  <div class="card_preview__number">
+          <div class="card_list slick-slider">
+            <div class="card_item">
+              <div class="card_preview">
+                <div class="card_preview__front">
+                  <img src="images/card.png" alt="card" width="500" class="card_preview__image">
+                  <div class="card_preview__label"></div>
+                  <div class="card_preview__info">
+                    <div class="card_preview__number">
                   <span class="card_mask">
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                   </span>
+                    </div>
+                    <div class="card_preview__date">12/19</div>
+                    <div class="card_preview__name">Cardholder Name</div>
                   </div>
-                  <div class="card_preview__date">12/19</div>
-                  <div class="card_preview__name">Cardholder Name</div>
+                </div>
+                <div class="card_preview__back">
+                  <div class="back_container">
+                    <div class="back_title">Activate</div>
+                    <div class="back_text">Activate the card to access all available functions. You have three attempts.</div>
+
+                    <form action="" class="form form--simple">
+                      <div class="form-group">
+                        <label for="code" class="control-label">Last 4 digits on the card</label>
+                        <div class="relative">
+                          <div class="pull-right">
+                            <button type="button" class="btn btn--primary _flip_card">Submit</button>
+                          </div>
+                          <div class="relative__input">
+                            <input type="text" class="form-control" id="code">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
                 </div>
               </div>
-              <div class="card_preview__back"></div>
-            </div>
-            <div class="card_actions">
-              <div class="card_actions__item card_actions__item--active">
-                <a href="">
-                  <i class="icon icon--activate"></i>
-                  <span>Activate</span>
-                </a>
-              </div>
-              <div class="card_actions__item">
-                <a href="">
-                  <i class="icon icon--show_pin"></i>
-                  <span>Show PIN</span>
-                </a>
-              </div>
-              <div class="card_actions__item">
-                <a href="">
-                  <i class="icon icon--block"></i>
-                  <span>Block card</span>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card_item">
-            <div class="card_preview">
-              <div class="card_preview__front">
-                <img src="images/card.png" alt="card" width="500" class="card_preview__image">
-                <div class="card_preview__label">
-                  <span class="label">not activated</span>
+              <div class="card_actions">
+                <div class="card_actions__item card_actions__item--active">
+                  <a href="#" class="_activate_card">
+                    <i class="icon icon--activate"></i>
+                    <span>Activate</span>
+                  </a>
                 </div>
-                <div class="card_preview__info">
-                  <div class="card_preview__number">
+                <div class="card_actions__item">
+                  <a href="">
+                    <i class="icon icon--show_pin"></i>
+                    <span>Show PIN</span>
+                  </a>
+                </div>
+                <div class="card_actions__item">
+                  <a href="">
+                    <i class="icon icon--block"></i>
+                    <span>Block card</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card_item">
+              <div class="card_preview">
+                <div class="card_preview__front">
+                  <img src="images/card.png" alt="card" width="500" class="card_preview__image">
+                  <div class="card_preview__label">
+                    <span class="label">not activated</span>
+                  </div>
+                  <div class="card_preview__info">
+                    <div class="card_preview__number">
                   <span class="card_mask">
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                     <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
                     <span class="card_mask__group card_mask__group--fill">6548</span>
                   </span>
+                    </div>
+                    <div class="card_preview__date">12/19</div>
+                    <div class="card_preview__name">Cardholder Name</div>
                   </div>
-                  <div class="card_preview__date">12/19</div>
-                  <div class="card_preview__name">Cardholder Name</div>
+                </div>
+                <div class="card_preview__back"></div>
+              </div>
+              <div class="card_actions">
+                <div class="card_actions__item card_actions__item--active">
+                  <a href="">
+                    <i class="icon icon--activate"></i>
+                    <span>Activate</span>
+                  </a>
+                </div>
+                <div class="card_actions__item">
+                  <a href="">
+                    <i class="icon icon--show_pin"></i>
+                    <span>Show PIN</span>
+                  </a>
+                </div>
+                <div class="card_actions__item">
+                  <a href="">
+                    <i class="icon icon--unblock"></i>
+                    <span>Unlock card</span>
+                  </a>
                 </div>
               </div>
-              <div class="card_preview__back"></div>
             </div>
-            <div class="card_actions">
-              <div class="card_actions__item card_actions__item--active">
-                <a href="">
-                  <i class="icon icon--activate"></i>
-                  <span>Activate</span>
-                </a>
+            <div class="card_item">
+              <div class="card_preview">
+                <div class="card_preview__front">
+                  <img src="images/card.png" alt="card" width="500" class="card_preview__image">
+                  <div class="card_preview__label">
+                    <span class="label label--yellow">Unpaid</span>
+                  </div>
+                  <div class="card_preview__info">
+                    <div class="card_preview__number">
+                  <span class="card_mask">
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group card_mask__group--fill">6548</span>
+                  </span>
+                    </div>
+                    <!-- если нет даты, всё равно выводить div -->
+                    <div class="card_preview__date">&nbsp;</div>
+                    <div class="card_preview__name">Cardholder Name</div>
+                  </div>
+                </div>
+                <div class="card_preview__back"></div>
               </div>
-              <div class="card_actions__item">
-                <a href="">
-                  <i class="icon icon--show_pin"></i>
-                  <span>Show PIN</span>
-                </a>
-              </div>
-              <div class="card_actions__item">
-                <a href="">
-                  <i class="icon icon--unblock"></i>
-                  <span>Unlock card</span>
-                </a>
+              <div class="card_actions">
+                <div class="card_actions__item card_actions__item--active">
+                  <a href="">
+                    <i class="icon icon--pay"></i>
+                    <span>Pay</span>
+                  </a>
+                </div>
+                <div class="card_actions__item">
+                  <a href="">
+                    <i class="icon icon--show_pin"></i>
+                    <span>Show PIN</span>
+                  </a>
+                </div>
+                <div class="card_actions__item">
+                  <a href="">
+                    <i class="icon icon--unblock"></i>
+                    <span>Unlock card</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="text-center">
-          <button class="btn btn--primary" type="button">Add card</button>
+          <div class="text-center">
+            <button class="btn btn--primary" type="button">Add card</button>
+          </div>
         </div>
       </div>
     </div>
@@ -335,6 +400,16 @@
         },*/
       ]
     });
+
+    $('._activate_card').on('click', function (e) {
+      e.preventDefault();
+      $(this).closest('.card_item').find('.card_preview').toggleClass('card_preview--flipped')
+    });
+
+    $('._flip_card').on('click', function (e) {
+      e.preventDefault();
+      $(this).closest('.card_item').find('.card_preview').removeClass('card_preview--flipped')
+    })
   </script>
   </body>
 </html>

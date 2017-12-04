@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Lykke Card – Unlock Your Wallet</title>
+    <meta name="description" content="The new Lykke Card: the quickest way to access your new assets">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  </head>
+  <body>
+
+  <header class="header header--inverse _header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header_logo _header_logo">
+          <a href="#" class="_move_to">
+            <img src="images/logo_white.svg" class="logo_show" width="40px" height="38px" alt="logo">
+            <img src="images/logo.svg" class="logo_hide" width="40px" height="38px" alt="logo">
+          </a>
+        </div>
+
+        <div class="header_right pull-right">
+          <menu class="header_nav">
+            <li class="header_nav__item">
+              <a href="#">
+                <span class="hidden-xs">My cards</span>
+                <i class="icon icon--plastic_card visible-xs"></i>
+              </a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#">
+                <span class="hidden-xs">Username</span>
+                <!-- if authorized
+                      <i class="icon icon--exit visible-xs"></i>
+                -->
+                <i class="icon icon--participate visible-xs"></i>
+              </a>
+            </li>
+          </menu>
+        </div>
+        <div class="header_center">
+          <menu class="header_nav">
+            <li class="header_nav__item">
+              <a href="#about" class="_move_to _header_link">About</a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#features" class="_move_to _header_link">Features</a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#fees" class="_move_to _header_link">Fees</a>
+            </li>
+          </menu>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section_message" id="message">
+    <div class="container">
+      <div class="alert_message">
+        <div class="alert_message__icon">
+          <img src="images/info_icn.svg" alt="info" width="64" height="64">
+          <!--<img src="images/error_icn.svg" alt="error" width="64" height="64">-->
+          <!--<img src="images/success_icn.svg" alt="success" width="64" height="64">-->
+        </div>
+        <div class="alert_message__title">You don’t have a Lykke Wallet account. Please, install the app and deposit your funds.</div>
+        <div class="alert_message__links">
+          <a href="">
+            <img src="images/download_icn.svg" width="24" height="24" alt="download">
+            <span>Download LykkeWallet</span>
+          </a>
+          <a href="">
+            <img src="images/play_black_icn.svg" width="24" height="24" alt="video">
+            <span>How to deposit your fund</span>
+          </a>
+        </div>
+        <div class="alert_message__button">
+          <a href="" class="btn btn--primary">Go back to My LykkeCards</a>
+        </div>
+
+        <div class="alert_message__footer">
+          <p>If you have any other problem contact our support: <a href="mailto:support@lykke.com">support@lykke.com</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <%= require('html-loader?attrs=false!./partials/footer.html') %>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="slick.min.js"></script>
+
+  <script>
+    $('.slick-slider').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      variableWidth: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        /*{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },*/
+      ]
+    });
+  </script>
+  </body>
+</html>
