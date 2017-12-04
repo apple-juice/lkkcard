@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Specifications" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="spec_messages" transform="translate(-576.000000, -473.000000)">
+            <g id="Group-2" transform="translate(573.000000, 470.000000)">
+                <g id="Page-1">
+                    <polygon id="Fill-1" fill="#000000" opacity="0" points="0 30 30 30 30 0 0 0"></polygon>
+                    <path d="M19.707,16.707 L15.707,20.707 C15.512,20.902 15.256,21 15,21 C14.744,21 14.488,20.902 14.293,20.707 L10.293,16.707 C9.902,16.316 9.902,15.684 10.293,15.293 C10.684,14.902 11.316,14.902 11.707,15.293 L14,17.586 L14,9 C14,8.448 14.448,8 15,8 C15.552,8 16,8.448 16,9 L16,17.586 L18.293,15.293 C18.684,14.902 19.316,14.902 19.707,15.293 C20.098,15.684 20.098,16.316 19.707,16.707 M15,3 C8.373,3 3,8.373 3,15 C3,21.627 8.373,27 15,27 C21.627,27 27,21.627 27,15 C27,8.373 21.627,3 15,3" id="Fill-3" fill="#111111"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
