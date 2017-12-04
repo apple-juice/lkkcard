@@ -161,7 +161,43 @@
   &--message {
     .modal__dialog {
       width: 470px;
+      min-height: 300px;
       max-width: 100%;
+    }
+
+    .modal__body {
+      padding-bottom: 20px;
+    }
+
+    .status_icon {
+      margin-bottom: 20px;
+    }
+
+    .success_message {
+      display: none;
+
+      .modal__footer {
+        padding-bottom: 20px;
+      }
+
+      &.show {
+        display: block;
+      }
+    }
+  }
+
+  &--text {
+    .modal__dialog {
+      width: 570px;
+      max-width: 100%;
+    }
+
+    .text {
+      margin-top: 15px;
+    }
+
+    a {
+      font-weight: getFontWeight(semibold);
     }
   }
 
@@ -218,4 +254,8 @@
       padding-right: 15px;
     }
   }
+}
+
+.modal .close {
+  z-index: 30;
 }

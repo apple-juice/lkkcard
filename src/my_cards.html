@@ -1,0 +1,340 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Lykke Card – Unlock Your Wallet</title>
+    <meta name="description" content="The new Lykke Card: the quickest way to access your new assets">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  </head>
+  <body>
+
+  <header class="header _header">
+    <div class="container">
+      <div class="header__wrapper">
+        <div class="header_logo _header_logo">
+          <a href="#" class="_move_to">
+            <img src="images/logo_white.svg" class="logo_show" width="40px" height="38px" alt="logo">
+            <img src="images/logo.svg" class="logo_hide" width="40px" height="38px" alt="logo">
+          </a>
+        </div>
+
+        <div class="header_right pull-right">
+          <menu class="header_nav">
+            <li class="header_nav__item">
+              <a href="#">
+                <span class="hidden-xs">My cards</span>
+                <i class="icon icon--plastic_card visible-xs"></i>
+              </a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#">
+                <span class="hidden-xs">Username</span>
+                <!-- if authorized
+                      <i class="icon icon--exit visible-xs"></i>
+                -->
+                <i class="icon icon--participate visible-xs"></i>
+              </a>
+            </li>
+          </menu>
+        </div>
+        <div class="header_center">
+          <menu class="header_nav">
+            <li class="header_nav__item">
+              <a href="#about" class="_move_to _header_link">About</a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#features" class="_move_to _header_link">Features</a>
+            </li>
+            <li class="header_nav__item">
+              <a href="#fees" class="_move_to _header_link">Fees</a>
+            </li>
+          </menu>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="section section_lead section_lead--cards" id="lead">
+    <div class="container">
+      <div class="col-md-6 automargin">
+        <h2>My LykkeCards</h2>
+
+        <div class="card_list slick-slider">
+          <div class="card_item">
+            <div class="card_preview">
+              <div class="card_preview__front">
+                <img src="images/card.png" alt="card" width="500" class="card_preview__image">
+                <div class="card_preview__label"></div>
+                <div class="card_preview__info">
+                  <div class="card_preview__number">
+                  <span class="card_mask">
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                  </span>
+                  </div>
+                  <div class="card_preview__date">12/19</div>
+                  <div class="card_preview__name">Cardholder Name</div>
+                </div>
+              </div>
+              <div class="card_preview__back"></div>
+            </div>
+            <div class="card_actions">
+              <div class="card_actions__item card_actions__item--active">
+                <a href="">
+                  <i class="icon icon--activate"></i>
+                  <span>Activate</span>
+                </a>
+              </div>
+              <div class="card_actions__item">
+                <a href="">
+                  <i class="icon icon--show_pin"></i>
+                  <span>Show PIN</span>
+                </a>
+              </div>
+              <div class="card_actions__item">
+                <a href="">
+                  <i class="icon icon--block"></i>
+                  <span>Block card</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card_item">
+            <div class="card_preview">
+              <div class="card_preview__front">
+                <img src="images/card.png" alt="card" width="500" class="card_preview__image">
+                <div class="card_preview__label">
+                  <span class="label">not activated</span>
+                </div>
+                <div class="card_preview__info">
+                  <div class="card_preview__number">
+                  <span class="card_mask">
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group">&middot;&middot;&middot;&middot;</span>
+                    <span class="card_mask__group card_mask__group--fill">6548</span>
+                  </span>
+                  </div>
+                  <div class="card_preview__date">12/19</div>
+                  <div class="card_preview__name">Cardholder Name</div>
+                </div>
+              </div>
+              <div class="card_preview__back"></div>
+            </div>
+            <div class="card_actions">
+              <div class="card_actions__item card_actions__item--active">
+                <a href="">
+                  <i class="icon icon--activate"></i>
+                  <span>Activate</span>
+                </a>
+              </div>
+              <div class="card_actions__item">
+                <a href="">
+                  <i class="icon icon--show_pin"></i>
+                  <span>Show PIN</span>
+                </a>
+              </div>
+              <div class="card_actions__item">
+                <a href="">
+                  <i class="icon icon--unblock"></i>
+                  <span>Unlock card</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button class="btn btn--primary" type="button">Add card</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--card_form">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-11 col-md-offset-1">
+          <div class="section_title">New LykkeCard</div>
+          <h3>Card info</h3>
+
+          <div class="row">
+            <div class="col-md-7">
+              <form class="form form--simple">
+                <div class="radio-group">
+                  <div class="radio radio--plate">
+                    <input type="radio" name="r" id="r1">
+                    <label for="r1" class="control-label">
+                      <i class="icon icon--plastic_card"></i>
+                      <span class="radio__title">Plastic</span>
+                    </label>
+                  </div>
+                  <div class="radio radio--plate">
+                    <input type="radio" name="r" id="r2">
+                    <label for="r2" class="control-label">
+                      <i class="icon icon--virtual_card"></i>
+                      <span class="radio__title">Virtual</span>
+                      <span class="hint">Only for online purchases</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label class="control-label">Type of payment system</label>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <div class="radio btn-block">
+                        <input type="radio" name="curr" id="radio" class="radio__control" checked="">
+                        <label for="radio" class="form-control control-label radio__label">EUR</label>
+                      </div>
+                      <div class="radio btn-block">
+                        <input type="radio" name="curr" id="radio1" class="radio__control">
+                        <label for="radio1" class="form-control control-label radio__label">GBP</label>
+                      </div>
+                      <div class="radio btn-block">
+                        <input type="radio" name="curr" id="radio2" class="radio__control">
+                        <label for="radio2" class="form-control control-label radio__label">USD</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="card_name" class="control-label">Name on the card</label>
+                  <input type="text" class="form-control" id="card_name">
+                </div>
+
+                <h3>Delivery info</h3>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <label for="card_name" class="control-label">Delivery option</label>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <div class="radio btn-block">
+                        <input type="radio" name="delivery" id="delivery1" class="radio__control" checked="">
+                        <label for="delivery1" class="form-control control-label radio__label">
+                          <span class="hint pull-right">7-13 days (USD 3)</span>
+                          <span class="radio__title">Standard</span>
+                        </label>
+                      </div>
+                      <div class="radio btn-block">
+                        <input type="radio" name="delivery" id="delivery2" class="radio__control">
+                        <label for="delivery2" class="form-control control-label radio__label">
+                          <span class="hint pull-right">3-5 days (USD 17)</span>
+                          <span class="radio__title">Express</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <a href="countries.html" class="hint pull-right">View list of eligible countries</a>
+                  <label for="countries" class="control-label">
+                    Country
+                  </label>
+                  <div class="select">
+                    <select name="countries" id="countries" class="form-control form-control--select">
+                      <option value="0">Germany</option>
+                      <option value="0">Germany</option>
+                    </select>
+                    <i class="icon icon--arrow-down"></i>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="city" class="control-label">City</label>
+                      <input type="text" class="form-control" id="city">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="zip" class="control-label">ZIP</label>
+                      <input type="text" class="form-control" id="zip">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="address" class="control-label">Address line</label>
+                  <input type="text" class="form-control" id="address">
+                </div>
+
+                <div class="submit-group">
+                  <button type="button" class="btn btn-block btn--primary btn-sm">Proceed</button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-xs-12 col-md-5">
+              <div class="total">
+                <div class="total__header">
+                  <div class="total__price">20 USD</div>
+                  <div class="total__title">Total price</div>
+                  <div class="total__hint">Payment only via a Lykke Wallet app</div>
+                </div>
+
+                <div class="checklist">
+                  <div class="checkbox checkbox--checked">
+                    <label class="control-label">
+                      <span>You downloaded Lykke Wallet</span>
+                      <a href="/" class="btn btn--flat">Download</a>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label class="control-label">
+                      <span>You passed KYC</span>
+                      <a href="/" class="btn btn--flat">Go to KYC procedure</a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <%= require('html-loader?attrs=false!./partials/footer.html') %>
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="slick.min.js"></script>
+
+  <script>
+    $('.slick-slider').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      variableWidth: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: [
+        /*{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },*/
+      ]
+    });
+  </script>
+  </body>
+</html>

@@ -31,7 +31,7 @@ app.use(
 )
 
 app.use('*', function (req, res, next) {
-  const filename = path.join(compiler.outputPath, 'index.html')
+  const filename = path.join(compiler.outputPath, 'my_cards.html')
 
   compiler.outputFileSystem.readFile(filename, (err, result) => {
     if (err) {

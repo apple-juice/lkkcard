@@ -38,27 +38,77 @@
               <div class="modal__content">
                 <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 
-                <div class="modal__body">
-                  <h3>Invite people to Lykke</h3>
-                  <div class="text">
-                    <p>Please enter e-mail of your friend:</p>
+                <div class="form_container">
+                  <div class="modal__body">
+                      <h3>Invite people to Lykke</h3>
+                      <div class="text">
+                        <p>Please enter e-mail of your friend:</p>
 
-                    <form action="">
-                      <div class="form-group">
-                        <div class="input-group">
-                          <label for="email" class="btn btn--icon input-group-addon left">
-                            <i class="icon icon--email"></i>
-                          </label>
-                          <input type="email" id="email" class="form-control">
-                        </div>
+                        <form action="" class="form">
+                          <div class="form-group">
+                            <div class="input-group">
+                              <label for="email" class="btn btn--icon input-group-addon left">
+                                <i class="icon icon--email"></i>
+                              </label>
+                              <input type="email" id="email" class="form-control">
+                            </div>
+                          </div>
+                        </form>
                       </div>
-                    </form>
+                  </div>
+                  <div class="modal__footer">
+                    <button type="button" class="btn btn--primary pull-right" data-dismiss="modal">Send invite</button>
+                    <button type="button" class="btn btn--flat" data-dismiss="modal">Cancel and close</button>
                   </div>
                 </div>
-                <div class="modal__footer">
-                  <button type="button" class="btn btn--primary pull-right" data-dismiss="modal">Send invite</button>
-                  <button type="button" class="btn btn--flat" data-dismiss="modal">Cancel and close</button>
+
+                <div class="success_message text-center">
+                  <div class="modal__body">
+                    <div class="status_icon">
+                      <img src="images/success_icn.svg" width="64" height="64" alt="success">
+                    </div>
+                    <h3>Invite people to Lykke</h3>
+                  </div>
+                  <div class="modal__footer">
+                    <button type="button" class="btn btn-block btn--primary pull-right" data-dismiss="modal">Send another</button>
+                    <button type="button" class="btn btn-block btn--flat" data-dismiss="modal">Close and go back</button>
+                  </div>
                 </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--text fade" id="info_text" tabindex="-1" role="dialog">
+
+      <div class="modal_valign">
+        <div class="modal_valign__row">
+          <div class="modal_valign__cell">
+
+            <div class="modal__dialog" role="document">
+              <div class="modal__content">
+                <button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+
+                <div class="modal__body">
+                  <h3>Here are bonus details</h3>
+                  <div class="text">
+                    <p>The more you share the code, the higher is the chance that at least two of your contacts will register and complete the KYC procedure, which is a necessary condition for you to become eligible to receive a free card.</p>
+                    <p>Once the three conditions are fulfilled (you can see your progress on this page), you will be placed in the queue of future Lykke Visa cardholders (*)!</p>
+                    <br>
+                    <p>If a user starts the application process, completes successfully the KYC procedure but fails to fulfill one or both of the remaining conditions, he/she is still eligible to get his/her card, but upon paying a card issuance fee.</p>
+                    <p>All Lykke users who participate in Lykke Visa referral program, will receive a bonus of 5 EUR / 5 GBP / 5 USD on their Lykke Visa cards after activating their cards, depending on the spending currency of their cards.</p>
+                    <p>This is a limited offer! The number of cards is limited to 1000 pieces. The eligible applications are placed in a queue in chronological order. So, hurry up!</p>
+                    <br>
+                    <p><small>(*) Shipping fees are excluded from the promo offer, they will be charged from the client’s account according to <a href="https://lykke.com/trading-conditions">Lykke fees policy</a></small></p>
+
+                  </div>
+                </div>
+
               </div>
             </div>
 

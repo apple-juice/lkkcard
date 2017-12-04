@@ -1,0 +1,71 @@
+.label { position: relative; top: -1px; color: #111111; background: #cfd2d7; font-weight: 600; display: inline-block; vertical-align: baseline; text-transform: uppercase; border-radius: 3px; letter-spacing: 0.07em; padding: 6px 10px 5px; font-size: 13px; font-size: 0.8125rem; line-height: 13px; line-height: 0.8125rem; margin: 0 4px; margin: 0 0.25rem; }
+
+.label:hover { color: #111111; }
+
+.label--primary, .label--primary:hover  { background: #0DA7FC; color: #fff }
+
+.label--blue { background: #0DA7FC; }
+
+.label--green, .label--green:hover { background: #13B72A; color: #fff }
+
+.label--red, .label--red:hover { background: #FF3E2E; color: #fff }
+
+.label--yellow { background: #FFAE2C; }
+
+.label--gray { background: rgba(63, 77, 96, 0.35); }
+
+.label:first-child { margin-left: 0; }
+
+.label .icon { font-size: 12px; font-size: 0.75rem; margin-right: 4px; margin-right: 0.25rem; }
+
+.label--text { background: transparent; font-weight: 600; letter-spacing: .02em; font-size: 13px; font-size: 0.8125rem; line-height: 13px; line-height: 0.8125rem; padding-left: 4px; padding-left: 0.25rem; padding-right: 4px; padding-right: 0.25rem; }
+
+.label--text.label--primary { color: #0DA7FC; }
+
+.label--text.label--blue { color: #0DA7FC; }
+
+.label--text.label--green { color: #13B72A; }
+
+.label--text.label--red { color: #FF3E2E; }
+
+.label--text.label--yellow { color: #FFAE2C; }
+
+.label--text.label--gray { color: rgba(63, 77, 96, 0.35); }
+
+.label--text .label--gray { color: #8c94a0; }
+
+.label--rounded { border-radius: 20px; border-radius: 1.25rem; }
+
+.label--flat { color: rgba(63, 77, 96, 0.35); border: 2px solid; background: transparent; letter-spacing: 0.07em; padding: 4px 10px 3px; }
+
+.label--flat.label--primary { color: #0DA7FC; }
+
+.label--flat.label--blue { color: #0DA7FC; }
+
+.label--flat.label--green { color: #13B72A; }
+
+.label--flat.label--red { color: #FF3E2E; }
+
+.label--flat.label--yellow { color: #FFAE2C; }
+
+.label--flat.label--gray { color: rgba(63, 77, 96, 0.35); }
+
+.label--muted.label--primary { background-color: rgba(13, 167, 252, 0.15); color: #0DA7FC; }
+
+.label--muted.label--violet { background-color: rgba(171, 0, 255, 0.15); color: #ab00ff; }
+
+.label--muted.label--green { background-color: rgba(19, 183, 42, 0.15); color: #13B72A; }
+
+.label--muted.label--red { background-color: rgba(255, 62, 46, 0.15); color: #FF3E2E; }
+
+.label--muted.label--yellow { background-color: rgba(255, 174, 44, 0.15); color: #FFAE2C; }
+
+.label--muted.label--gray { background-color: #EBEDEF; color: #8c94a0; }
+
+.label_group { font-size: 0; }
+
+.label_group .label { display: inline-block; vertical-align: middle; float: none; border-radius: 0; margin-left: 0; margin-right: 0; }
+
+.label_group .label:first-child { border-radius: 4px 0 0 4px; }
+
+.label_group .label:last-child { border-radius: 0 4px 4px 0; }
