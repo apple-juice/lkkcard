@@ -1290,6 +1290,47 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.spinner_container {
+  padding: 40px; }
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+  border: 2px solid #fff;
+  border-bottom-color: transparent !important;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease; }
+  .spinner--small {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-bottom: 4px; }
+  .spinner--dark {
+    border-color: #333; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
 .label {
   position: relative;
   top: -1px;
@@ -1593,9 +1634,8 @@ body {
   max-width: 140px; }
 
 .header_right .icon {
-  font-size: 18px;
-  margin-top: -2px;
-  margin-right: 0; }
+  font-size: 24px;
+  margin: -4px 5px -4px 0; }
 
 .apps {
   font-size: 0;
@@ -2245,6 +2285,12 @@ body {
     border: 0; }
     .section_lead .form-control:focus {
       background-color: rgba(255, 255, 255, 0.15); }
+    .section_lead .form-control.error {
+      -webkit-box-shadow: inset 0 0 0 1px #ff3e2e;
+              box-shadow: inset 0 0 0 1px #ff3e2e; }
+    .section_lead .form-control.error:focus {
+      -webkit-box-shadow: inset 0 0 0 1px #ff3e2e;
+              box-shadow: inset 0 0 0 1px #ff3e2e; }
   .section_lead .form-control ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.5); }
   .section_lead .form-control :-moz-placeholder {
@@ -3654,9 +3700,15 @@ ol.list_styled {
     .section_lead--cards h2 {
       margin-top: 0; } }
 
+.card_footer {
+  text-align: left;
+  width: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
 .card_list {
   position: relative;
-  padding-top: 100px;
   width: 540px;
   max-width: 100%;
   margin: 0 auto; }
@@ -3667,7 +3719,7 @@ ol.list_styled {
 
 .slick-prev,
 .slick-next {
-  top: 0;
+  top: 100%;
   width: 50px;
   height: 50px;
   line-height: 54px;
@@ -3675,7 +3727,8 @@ ol.list_styled {
   border: 2px solid #fff;
   text-align: center;
   font-size: 22px;
-  left: 50%;
+  right: 20px;
+  left: auto;
   margin-top: 0;
   -webkit-transform: none;
           transform: none; }
@@ -3702,20 +3755,20 @@ ol.list_styled {
         font-size: 18px; } }
 
 .slick-prev {
-  margin-left: -70px; }
+  margin-left: 0;
+  margin-right: 70px; }
   .slick-prev:before {
     content: "\E92A"; }
   @media (max-width: 767px) {
     .slick-prev {
       margin-left: -50px; } }
 
-.slick-next {
-  margin-left: 20px; }
-  .slick-next:before {
-    content: "\E929"; }
-  @media (max-width: 767px) {
-    .slick-next {
-      margin-left: 10px; } }
+.slick-next:before {
+  content: "\E929"; }
+
+@media (max-width: 767px) {
+  .slick-next {
+    margin-left: 10px; } }
 
 .slick-list {
   overflow: visible; }
@@ -3724,7 +3777,7 @@ ol.list_styled {
   width: 580px;
   padding: 0 20px;
   max-width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   -webkit-perspective: 1000px;
           perspective: 1000px; }
   .card_item:focus {
@@ -3944,21 +3997,28 @@ ol.list_styled {
     line-height: 30px;
     margin: 0 4px;
     -webkit-transition: opacity 0.3s ease;
-    transition: opacity 0.3s ease; }
-    .card_actions__item:hover {
-      opacity: .6; }
+    transition: opacity 0.3s ease;
+    cursor: default;
+    pointer-events: none; }
     .card_actions__item--active {
+      pointer-events: all;
+      cursor: pointer;
       opacity: 1; }
       .card_actions__item--active:hover {
-        opacity: 1; }
+        opacity: .8; }
     .card_actions__item .icon {
       font-size: 30px;
       margin-right: 4px; }
       .card_actions__item .icon--pay {
         font-size: 22px; }
-    .card_actions__item a {
+    .card_actions__item a, .card_actions__item button {
       color: inherit;
-      padding: 10px 14px; }
+      padding: 10px 14px;
+      text-decoration: none;
+      border: 0;
+      background: transparent; }
+      .card_actions__item a:focus, .card_actions__item button:focus {
+        outline: none; }
   @media (max-width: 767px) {
     .card_actions {
       padding: 20px 0;
