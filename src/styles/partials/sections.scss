@@ -103,6 +103,10 @@
     &:focus {
       background-color: rgba(getColor(white), .15);
     }
+
+    &.error { box-shadow: inset 0 0 0 1px #ff3e2e; }
+
+    &.error:focus { box-shadow: inset 0 0 0 1px #ff3e2e; }
   }
 
   .form-control ::-webkit-input-placeholder { color: rgba(getColor(white), .5) }

@@ -1,0 +1,40 @@
+.spinner_container {
+  padding: 40px;
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  display: block;
+  animation: spin 1s linear infinite;
+
+  border: 2px solid getColor(white);
+  border-bottom-color: transparent !important;
+  transition: border $transition;
+
+  &--small {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+  }
+
+  &--dark {
+    border-color: getColor(text);
+  }
+}
+
+
+@keyframes spin {
+  0%{
+    transform:rotate(0deg);
+  }
+
+  100% {
+    transform:rotate(360deg);
+  }
+}

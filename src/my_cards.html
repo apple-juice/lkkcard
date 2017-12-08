@@ -26,8 +26,8 @@
           <menu class="header_nav">
             <li class="header_nav__item">
               <a href="#">
+                <i class="icon icon--plastic_card"></i>
                 <span class="hidden-xs">My cards</span>
-                <i class="icon icon--plastic_card visible-xs"></i>
               </a>
             </li>
             <li class="header_nav__item">
@@ -62,7 +62,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 automargin">
-          <h2>My LykkeCards</h2>
+          <h2>My Lykke Prepaid Сards</h2>
+
+          <div class="spinner_container">
+            <div class="spinner"></div>
+          </div>
 
           <div class="card_list slick-slider">
             <div class="card_item">
@@ -96,8 +100,9 @@
                             <button type="button" class="btn btn--primary _flip_card">Submit</button>
                           </div>
                           <div class="relative__input">
-                            <input type="text" class="form-control" id="code">
+                            <input type="text" class="form-control error" id="code">
                           </div>
+                          <div class="hint hint--error">Error</div>
                         </div>
                       </div>
                     </form>
@@ -214,7 +219,7 @@
             </div>
           </div>
 
-          <div class="text-center">
+          <div class="card_footer">
             <button class="btn btn--primary" type="button">Add card</button>
           </div>
         </div>
@@ -339,6 +344,9 @@
 
                 <div class="submit-group">
                   <button type="button" class="btn btn-block btn--primary btn-sm">Proceed</button>
+                  <button type="button" class="btn btn-block btn--primary btn-sm" disabled>
+                    <span class="spinner spinner--small"></span>
+                  </button>
                 </div>
               </form>
             </div>

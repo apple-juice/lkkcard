@@ -29,6 +29,7 @@ body {
   @include fontantialias(true);
 }
 
+@import 'partials/preloader';
 @import 'partials/labels';
 @import 'partials/header';
 @import 'partials/footer_shared';
