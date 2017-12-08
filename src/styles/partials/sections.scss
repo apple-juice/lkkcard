@@ -253,9 +253,23 @@
     margin-bottom: 37px;
   }
 
+  .section_subtitle {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: -0.4px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+  }
+
   @include break-max(medium) {
     h3 {
       margin-bottom: 10px;
+    }
+
+    .section_subtitle {
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }

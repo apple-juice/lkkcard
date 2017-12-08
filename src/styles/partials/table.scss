@@ -44,20 +44,55 @@
   }
 }
 
+.text-hint {
+  font-size: 14px;
+  line-height: 1.43;
+  color: rgba(getColor(secondary), .6);
+}
+
 .table_fees {
+  @include break-max(medium) {
+    tbody {
+      &._first {
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.table_fees,
+.table_limits {
   ._fees {
     width: 400px;
   }
 
   ._cur {
-    text-align: center;
+    text-align: left;
   }
 
   ._title {
     display: none;
   }
 
-  @include break-max(mobile-alt) {
+  .visible-small {
+    display: none;
+  }
+
+  ._th_title {
+     th {
+       border-bottom: 0;
+     }
+  }
+
+  ._th_subtitle {
+    border-top: 0;
+
+    td {
+      padding-top: 0 !important;
+    }
+  }
+
+  @include break-max(medium) {
     display: block;
     
     tbody, tr, td {
@@ -69,10 +104,6 @@
       margin-bottom: 15px;
       padding-top: 10px;
       border-top: 1px solid rgba(getColor(secondary), .04);
-
-      &._first {
-        border-top: 0;
-      }
     }
 
     tr {
@@ -89,6 +120,10 @@
 
     .hidden-small {
       display: none;
+    }
+
+    .visible-small {
+      display: block;
     }
 
     ._fees {
@@ -114,6 +149,48 @@
 
     ._cur {
       text-align: left;
+    }
+  }
+}
+
+.table_limits {
+  @include break-max(medium) {
+    ._cur {
+      width: 40%;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    ._type {
+      padding-left: 21%;
+
+      ._title + ._title {
+        padding-left: 10px;
+      }
+    }
+
+    th._fees {
+      border-bottom: 0;
+    }
+
+    ._value {
+      float: none;
+    }
+
+    ._title_cur {
+      width: 20%;
+      display: inline-block;
+      vertical-align: top;
+      color: rgba(63, 77, 96, 0.8);
+    }
+
+    ._fees {
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        display: none;
+      }
     }
   }
 }

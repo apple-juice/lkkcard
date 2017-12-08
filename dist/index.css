@@ -2033,8 +2033,8 @@ body {
   margin-bottom: 2.5rem; }
 
 .footer__top {
-  padding: 30px 0 20px;
-  padding: 1.875rem 0 1.25rem; }
+  padding: 20px 0 20px;
+  padding: 1.25rem 0 1.25rem; }
 
 .footer__bottom {
   background: transparent;
@@ -2377,9 +2377,20 @@ body {
 .section_fees h3 {
   margin-bottom: 37px; }
 
+.section_fees .section_subtitle {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin-bottom: 30px;
+  padding: 0 20px; }
+
 @media (max-width: 767px) {
   .section_fees h3 {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .section_fees .section_subtitle {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 .section_request .section_title {
   font-weight: 400;
@@ -3192,54 +3203,120 @@ ol.list_styled {
       .table tr:hover td {
         background-color: transparent; } }
 
-.table_fees ._fees {
+.text-hint {
+  font-size: 14px;
+  line-height: 1.43;
+  color: rgba(63, 77, 96, 0.6); }
+
+@media (max-width: 767px) {
+  .table_fees tbody._first {
+    border-top: 0; } }
+
+.table_fees ._fees,
+.table_limits ._fees {
   width: 400px; }
 
-.table_fees ._cur {
-  text-align: center; }
+.table_fees ._cur,
+.table_limits ._cur {
+  text-align: left; }
 
-.table_fees ._title {
+.table_fees ._title,
+.table_limits ._title {
   display: none; }
 
-@media (max-width: 640px) {
-  .table_fees {
+.table_fees .visible-small,
+.table_limits .visible-small {
+  display: none; }
+
+.table_fees ._th_title th,
+.table_limits ._th_title th {
+  border-bottom: 0; }
+
+.table_fees ._th_subtitle,
+.table_limits ._th_subtitle {
+  border-top: 0; }
+  .table_fees ._th_subtitle td,
+  .table_limits ._th_subtitle td {
+    padding-top: 0 !important; }
+
+@media (max-width: 767px) {
+  .table_fees,
+  .table_limits {
     display: block; }
-    .table_fees tbody, .table_fees tr, .table_fees td {
+    .table_fees tbody, .table_fees tr, .table_fees td,
+    .table_limits tbody,
+    .table_limits tr,
+    .table_limits td {
       display: block;
       text-align: left; }
-    .table_fees tbody {
+    .table_fees tbody,
+    .table_limits tbody {
       margin-bottom: 15px;
       padding-top: 10px;
       border-top: 1px solid rgba(63, 77, 96, 0.04); }
-      .table_fees tbody._first {
-        border-top: 0; }
-    .table_fees tr th, .table_fees tr td {
+    .table_fees tr th, .table_fees tr td,
+    .table_limits tr th,
+    .table_limits tr td {
       padding: 4px 10px; }
-    .table_fees tr td {
+    .table_fees tr td,
+    .table_limits tr td {
       border: 0; }
-    .table_fees tr td:after {
+    .table_fees tr td:after,
+.table_limits tr td:after {
     content: '';
     display: block;
     clear: both; }
-    .table_fees .hidden-small {
+    .table_fees .hidden-small,
+    .table_limits .hidden-small {
       display: none; }
-    .table_fees ._fees {
+    .table_fees .visible-small,
+    .table_limits .visible-small {
+      display: block; }
+    .table_fees ._fees,
+    .table_limits ._fees {
       font-family: "Akrobat", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 16px;
       font-weight: 700;
       color: #111;
       white-space: normal;
       width: 100%; }
-    .table_fees ._title {
+    .table_fees ._title,
+    .table_limits ._title {
       color: rgba(63, 77, 96, 0.8);
       float: left;
       width: 50%;
       display: block; }
-    .table_fees ._value {
+    .table_fees ._value,
+    .table_limits ._value {
       float: left;
       width: 50%; }
-    .table_fees ._cur {
+    .table_fees ._cur,
+    .table_limits ._cur {
       text-align: left; } }
+
+@media (max-width: 767px) {
+  .table_limits ._cur {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top; }
+  .table_limits ._type {
+    padding-left: 21%; }
+    .table_limits ._type ._title + ._title {
+      padding-left: 10px; }
+  .table_limits th._fees {
+    border-bottom: 0; }
+  .table_limits ._value {
+    float: none; }
+  .table_limits ._title_cur {
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    color: rgba(63, 77, 96, 0.8); }
+  .table_limits ._fees {
+    overflow: hidden; }
+    .table_limits ._fees:after {
+      content: '';
+      display: none; } }
 
 .floating {
   -webkit-transform: translate(0px);
@@ -4255,3 +4332,13 @@ ol.list_styled {
 
 .section_message {
   padding-bottom: 0; }
+
+.footer_desc {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left; }
+  .footer_desc__inner {
+    border-top: 1px solid #ebedef;
+    padding-top: 20px; }
+  .footer_desc .text-muted {
+    color: rgba(63, 77, 96, 0.6); }

@@ -46,3 +46,19 @@ body {
 @import 'vendor/slick/slick';
 @import 'partials/cards';
 @import 'partials/messages';
+
+
+.footer_desc {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+
+  &__inner {
+    border-top: 1px solid #ebedef;
+    padding-top: 20px;
+  }
+
+  .text-muted {
+    color: rgba(getColor(secondary), .6);
+  }
+}
