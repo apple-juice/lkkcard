@@ -376,3 +376,20 @@
 .icon--plastic_card:before {
   content: "\e972";
 }
+.icon--warning .path1:before {
+  content: "\e973";
+  color: rgb(255, 255, 255);
+}
+.icon--warning .path2:before {
+  content: "\e974";
+  margin-left: -1em;
+  color: rgb(7, 7, 7);
+}
+.icon--warning .path3:before {
+  content: "\e975";
+  margin-left: -1em;
+  color: rgb(5, 5, 6);
+}
+.icon--upgrade:before {
+  content: "\e976";
+}
